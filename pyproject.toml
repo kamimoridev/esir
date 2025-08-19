@@ -1,0 +1,19 @@
+[project]
+name = "esir"
+version = "0.2.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "llama-cpp-python>=0.3.16",
+    "usearch>=2.19.3",
+    "numpy>=1.26",
+    "ttkbootstrap>=1.10.1",
+]
+
+[project.scripts]
+esir = "esir_cli:main"
+esir-index = "esir_cli:main_index"
+esir-search = "esir_cli:main_search"
+esir-clear = "esir_cli:main_clear"
+esir-gui = "tk_search_gui:main"
